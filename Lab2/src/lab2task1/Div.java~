@@ -1,0 +1,44 @@
+public class Div {
+ 
+  public static void main(String[] args) { 
+    
+    
+      int n=6;
+      int dc=1;
+      int dcount=0;
+      
+      while(dc<=n){
+        if (n%dc==0){
+         System.out.println(dc);
+        }
+      
+      
+      }
+      
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+  }
+  
+}

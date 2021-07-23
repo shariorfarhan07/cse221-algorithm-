@@ -1,0 +1,11 @@
+public class question1 {
+    public static void main(String[] args) {
+        digit d1=new digit(5);
+        digit d2=new digit(10);
+        digit d3=new digit(20);
+        d1.addmultiply();
+        d2.addmultiply();
+        d3.addmultiply();
+    }
+    
+}

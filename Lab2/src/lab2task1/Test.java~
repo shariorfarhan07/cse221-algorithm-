@@ -1,0 +1,16 @@
+/**
+ * Auto Generated Java Class.
+ */
+public class Test {
+  
+  
+  public static void main(String[] args) { 
+    int a=123;
+    int b=321;
+    String aa ="farhan is the best ";
+    System.out.println(a-b);
+  }
+  
+  /* ADD YOUR CODE HERE */
+  
+}

@@ -1,0 +1,25 @@
+public class circle{
+  private int radius;
+  public static int numberofobjects=0;
+  
+  public circle(){
+  radius=1
+  numberofobjects++; 
+  }
+  public static int howManyCircle(){
+  return numberofobjects;
+  }
+  public int area(circle a){
+    if (this.radius==a.radius){
+    return 3.1416*this.radius*this.radius;
+    }
+    return this.radius*2;
+  }
+  public setradius(int a ){ radius=a;}
+
+}
+/*
+ * construstor without parameter(circle()) will assign 1 to radius and
+ * increment the static value numberofobjects because it will tell us
+ * nummber of class we created 
+ */

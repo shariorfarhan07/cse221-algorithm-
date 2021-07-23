@@ -1,0 +1,20 @@
+Motijheel Moghbazar
+Motijheel A B C D E F G H I J K L Moghbazar
+Motijheel A 3
+A B 4
+A H 6
+B G 2
+H I 5
+B C 7
+C F 7
+C D 3
+D E 1
+F G 2
+F Moghbazar 4
+G H 3
+G J 1
+I J 7
+J K 6
+K L 4
+K Moghbazar 7
+L Moghbazar 2

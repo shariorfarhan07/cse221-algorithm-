@@ -1,0 +1,8 @@
+public class seles{
+   String name;
+   int socialsecuritynumber;
+   static int seles=0;
+   public seles(){seles++;}
+  
+  public selesNumber(){return member;}
+}

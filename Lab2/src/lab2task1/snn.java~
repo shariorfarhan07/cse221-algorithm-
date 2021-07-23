@@ -1,0 +1,12 @@
+public class snn extends seles{
+  double comissionrate;
+  
+  public ssn(String n,int a,int b){
+   super.name=n;
+   super.socialsecuritynumber=a;
+   super.seles=b;
+  }
+  
+  
+
+}
