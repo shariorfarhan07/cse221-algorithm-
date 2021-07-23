@@ -1,0 +1,5 @@
+public class vertex{
+public String a;
+public Stribng b;
+public int w;
+}
