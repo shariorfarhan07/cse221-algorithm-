@@ -1,0 +1,26 @@
+public static int knapR(int cap,int n,int w[], int b[]){
+  m=new int[n+1][cap+1];
+  for(int i =0;i<m.length;i++){
+      for(int ii =0;ii<m[0].length;ii++){
+       m[i][ii]=-1;
+      }
+      
+  }
+  
+ return knapM( cap, 0, w,  b);
+}
+  
+public static  int knapM(int cap,int ind,int w[], int b[]){
+if(ind>m.length) return 0;
+if(m[ind][cap]!=-1) return m[ind][cap];
+int ret1=0;
+int ret2=0;
+if(cap>=w[ind]){
+ret1= b[ind] +knapM( cap-w[ind], ind+1, w,  b);
+}
+ret2=knapM( cap-w[ind], ind+1, w,  b);
+
+m[ind][cap]=Math.max(ret1,ret2);
+return m[ind][cap];
+
+}

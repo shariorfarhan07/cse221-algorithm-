@@ -1,0 +1,73 @@
+public class dfsLab4{
+  public static void main(String arg[]){
+    
+  }
+  public static  int count=0;
+  public static int []parent;
+  public static int []st;
+  public static String color[];
+  public static int time=0;
+  public static int topology[];
+  
+ public static int []ft;
+  
+  
+  
+  
+ public static void dfs_visit(int g[][],int s ){
+  color[s]="Grey";
+  time++;
+  st[s]=time;
+  for(int i=0;i<g[0].length;i++){
+    if(color[i].equals("white")&&g[s][i]==1){
+     parent[i]=s;
+      dfs_visit(g,i);
+    }
+  }
+  color[s]="black";
+  time++;
+  ft[s]=time;
+  topology[count++]=s;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  public static void dfs(int g[][],int s ){
+    time=0;
+    parent=new int[g[0].length];
+    st=new int[g[0].length];
+    ft=new int[g[0].length];
+    color=new String[g[0].length];
+    for(int i =0;i<parent.length;i++){
+      parent[i]=-1;
+      color[i]="white";  
+    }
+    for(int i=0;i<g[0].length;i++){
+      if(g[s][i]==1&&color[i].equals("White")){
+        dfs_visit(g,i);
+      }
+      
+    }
+  }
+  
+  
+
+  
+  
+  
+  
+  
+}

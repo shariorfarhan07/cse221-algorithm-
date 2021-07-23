@@ -1,0 +1,42 @@
+public class kruskal{
+  public edge{
+  int start;
+  int end;
+  int w;
+  public edge(int s,int e,int ww){
+    start=s;
+    end=e;
+    w=ww;
+  
+  }
+  }
+  public static void main(String arg []){
+         BufferedReader bf=new BufferedReader(new FileReader(new File("C:\\Users\\Farhan\\Documents\\NetBeansProjects\\LAB5new\\graph.txt")));
+       StringTokenizer st=new StringTokenizer(bf.readLine()," ");
+       String city[]=new String[st.countTokens()];
+       int c=0;
+       while(st.hasMoreTokens()){
+       city[c++]=st.nextToken();
+       }
+       int g[][]=new int[city.length][city.length];
+       c=0;
+       while(bf.ready()){
+       st=new StringTokenizer(bf.readLine()," ");
+       int cc=0;
+       while(st.hasMoreTokens()){
+       g[c][cc++]=Integer.parseInt(st.nextToken());
+       }c++;
+       }    
+       
+       for(int i=0;i<g[0].length;i++){
+       System.out.print(city[i]+' ');
+       }
+       System.out.println();
+       for(int i=0;i<g[0].length;i++){
+       for(int ii=0;ii<g[0].length;ii++){
+       System.out.print(g[i][ii]+"   \t");
+       }
+       System.out.println();
+       }
+  }
+}

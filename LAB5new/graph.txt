@@ -1,0 +1,4 @@
+Newyork   Washington  California
+0        3750   3923
+3750   0          1227
+3923   1227    0
